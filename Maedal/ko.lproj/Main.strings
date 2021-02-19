@@ -1,0 +1,165 @@
+
+/* Class = "UILabel"; text = "Add Subscriptions"; ObjectID = "03p-rh-VVv"; */
+"03p-rh-VVv.text" = "Add Subscriptions";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "1F1-gA-ctb"; */
+"1F1-gA-ctb.title" = "Item";
+
+/* Class = "UINavigationItem"; title = "Icon"; ObjectID = "1oL-p5-HFO"; */
+"1oL-p5-HFO.title" = "Icon";
+
+/* Class = "UILabel"; text = "$10"; ObjectID = "2nA-os-jNf"; */
+"2nA-os-jNf.text" = "$10";
+
+/* Class = "UILabel"; text = "No left payments"; ObjectID = "3GR-Ah-ldh"; */
+"3GR-Ah-ldh.text" = "No left payments";
+
+/* Class = "UILabel"; text = "31"; ObjectID = "3iY-jg-v1T"; */
+"3iY-jg-v1T.text" = "31";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "4mv-mT-WYj"; */
+"4mv-mT-WYj.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Add"; ObjectID = "6Gp-bX-Yzu"; */
+"6Gp-bX-Yzu.title" = "Add";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "6hg-kC-T00"; */
+"6hg-kC-T00.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "6w8-wG-F5Z"; */
+"6w8-wG-F5Z.text" = "Label";
+
+/* Class = "UILabel"; text = "Subscription name"; ObjectID = "6yl-G8-5Sc"; */
+"6yl-G8-5Sc.text" = "Subscription name";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "78G-e8-nI1"; */
+"78G-e8-nI1.text" = "Label";
+
+/* Class = "UILabel"; text = "$10"; ObjectID = "7g9-eB-6Dd"; */
+"7g9-eB-6Dd.text" = "$10";
+
+/* Class = "UILabel"; text = "No subscription to show"; ObjectID = "8O0-gW-fOC"; */
+"8O0-gW-fOC.text" = "No subscription to show";
+
+/* Class = "UINavigationItem"; title = "More"; ObjectID = "8y1-MD-xes"; */
+"8y1-MD-xes.title" = "More";
+
+/* Class = "UILabel"; text = "No subscriptions"; ObjectID = "94W-RK-7NI"; */
+"94W-RK-7NI.text" = "No subscriptions";
+
+/* Class = "UILabel"; text = "Every 10th"; ObjectID = "Asi-C8-XXD"; */
+"Asi-C8-XXD.text" = "Every 10th";
+
+/* Class = "UILabel"; text = "Next Payment"; ObjectID = "Bp0-dK-Tov"; */
+"Bp0-dK-Tov.text" = "Next Payment";
+
+/* Class = "UIButton"; normalTitle = "Licenses"; ObjectID = "ChO-K5-6Kb"; */
+"ChO-K5-6Kb.normalTitle" = "Licenses";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "EGj-vJ-fwI"; */
+"EGj-vJ-fwI.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "GVF-La-Syz"; */
+"GVF-La-Syz.text" = "Label";
+
+/* Class = "UILabel"; text = "Upcoming"; ObjectID = "Gb8-w7-sZ6"; */
+"Gb8-w7-sZ6.text" = "Upcoming";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "MMM-Km-t6g"; */
+"MMM-Km-t6g.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "Confirm"; ObjectID = "RWG-Ta-zSC"; */
+"RWG-Ta-zSC.title" = "Confirm";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "Shj-lD-Kya"; */
+"Shj-lD-Kya.text" = "0";
+
+/* Class = "UINavigationItem"; title = "Overview"; ObjectID = "Tsn-tj-bQF"; */
+"Tsn-tj-bQF.title" = "Overview";
+
+/* Class = "UIButton"; normalTitle = "Privacy Policy"; ObjectID = "Tvm-cF-qes"; */
+"Tvm-cF-qes.normalTitle" = "Privacy Policy";
+
+/* Class = "UILabel"; text = "Preview"; ObjectID = "V1K-of-wDW"; */
+"V1K-of-wDW.text" = "Preview";
+
+/* Class = "UILabel"; text = "$0"; ObjectID = "VAd-KS-nt4"; */
+"VAd-KS-nt4.text" = "$0";
+
+/* Class = "UILabel"; text = "Subscriptions"; ObjectID = "VQm-k2-d04"; */
+"VQm-k2-d04.text" = "Subscriptions";
+
+/* Class = "UINavigationItem"; title = "Maedal"; ObjectID = "XZ7-Os-cDi"; */
+"XZ7-Os-cDi.title" = "Maedal";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Z2e-zO-ZVU"; */
+"Z2e-zO-ZVU.text" = "Label";
+
+/* Class = "UILabel"; text = "Total Pay"; ObjectID = "ZYR-lu-TbY"; */
+"ZYR-lu-TbY.text" = "Total Pay";
+
+/* Class = "UIButton"; normalTitle = "Can't find the currency unit? "; ObjectID = "bfb-A6-1Yz"; */
+"bfb-A6-1Yz.normalTitle" = "Can't find the currency unit? ";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "dXH-pN-m1j"; */
+"dXH-pN-m1j.text" = "Title";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "fB7-Rf-Jtz"; */
+"fB7-Rf-Jtz.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "fQX-ID-KAa"; */
+"fQX-ID-KAa.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "fal-WY-R7e"; */
+"fal-WY-R7e.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "Done"; ObjectID = "isw-qS-6jk"; */
+"isw-qS-6jk.title" = "Done";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "jRN-vf-mJ1"; */
+"jRN-vf-mJ1.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "jdi-mr-i2b"; */
+"jdi-mr-i2b.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "kJl-1X-ohK"; */
+"kJl-1X-ohK.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "Cancel"; ObjectID = "m7j-gc-fZA"; */
+"m7j-gc-fZA.title" = "Cancel";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "miG-AG-6EC"; */
+"miG-AG-6EC.text" = "Label";
+
+/* Class = "UILabel"; text = "v1.0"; ObjectID = "p1r-xf-rxr"; */
+"p1r-xf-rxr.text" = "v1.0";
+
+/* Class = "UISegmentedControl"; pF7-mQ-fX1.segmentTitles[0] = "Color"; ObjectID = "pF7-mQ-fX1"; */
+"pF7-mQ-fX1.segmentTitles[0]" = "Color";
+
+/* Class = "UISegmentedControl"; pF7-mQ-fX1.segmentTitles[1] = "Icon"; ObjectID = "pF7-mQ-fX1"; */
+"pF7-mQ-fX1.segmentTitles[1]" = "Icon";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "pWU-bd-H5u"; */
+"pWU-bd-H5u.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "Save"; ObjectID = "rfz-bv-GOn"; */
+"rfz-bv-GOn.title" = "Save";
+
+/* Class = "UINavigationItem"; title = "Monetary Unit"; ObjectID = "sR2-jW-ELw"; */
+"sR2-jW-ELw.title" = "Monetary Unit";
+
+/* Class = "UIBarButtonItem"; title = "Confirm"; ObjectID = "saq-Rx-TSL"; */
+"saq-Rx-TSL.title" = "Confirm";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "shJ-1E-xWT"; */
+"shJ-1E-xWT.text" = "Label";
+
+/* Class = "UILabel"; text = "$0"; ObjectID = "uLh-99-xrA"; */
+"uLh-99-xrA.text" = "$0";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "xas-mL-dfH"; */
+"xas-mL-dfH.text" = "Label";
+
+/* Class = "UILabel"; text = "Details"; ObjectID = "z5z-eT-Mes"; */
+"z5z-eT-Mes.text" = "Details";
