@@ -9,12 +9,16 @@ import UIKit
 
 class AddViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    private static let SEG_ADD_SELECTION = "segAddSelection"
-    private static let SEG_ICON = "segIcon"
+    private let SEG_ADD_SELECTION = "segAddSelection"
+    private let SEG_ICON = "segIcon"
     
     private var data: [[AddTableViewData]] = Array()
     private var header: [String?] = Array()
     private var footer: [String?] = Array()
+    
+    var subscription: Subscription!
+    private var editMode: Bool = false
+    var onViewControllerDisappear: (() -> ())?
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -26,7 +30,12 @@ class AddViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         tableView.delegate = self
         tableView.dataSource = self
         
+        initSubscriptionData()
         initTableViewData()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        onViewControllerDisappear?()
     }
     
 
@@ -34,11 +43,62 @@ class AddViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    */
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if segue.identifier == SEG_ICON {
+            let vc = segue.destination as? IconViewController
+            vc?.onSaveClickListener = { color, icon in
+                self.subscription.icon = icon
+                self.subscription.color = color
+            }
+        } else if segue.identifier == SEG_ADD_SELECTION {
+            let section = self.tableView.indexPathForSelectedRow?.section ?? 0
+            let row = self.tableView.indexPathForSelectedRow?.row ?? 0
+            
+            guard let vc = segue.destination as? SelectViewController else {
+                return
+            }
+            
+            switch self.data[section][row].id {
+            case "category":
+                vc.data = convertToSelectData(list: Category.getList())
+                vc.onItemSelectedListener = { data in
+                    self.subscription.category = data as? Category ?? .Entertainment
+                }
+                break
+                
+            case "payCycle":
+                vc.data = convertToSelectData(list: PayCycle.getList())
+                vc.onItemSelectedListener = { data in
+                    self.subscription.payCycle = data as? PayCycle ?? .Monthly
+                }
+                break
+                
+            case "payMethod":
+                vc.data = convertToSelectData(list: PayMethod.getList())
+                vc.onItemSelectedListener = { data in
+                    self.subscription.payMethod = data as? PayMethod ?? .AppStore
+                }
+                break
+                
+            default:
+                break
+            }
+        }
     }
-    */
+    
+    private func convertToSelectData<T: IntBasedEnumProtocol>(list: [T]) -> [SelectItemData] {
+        var data: [SelectItemData] = Array()
+        list.forEach { i in
+            data.append(SelectItemData(data: i, title: i.string(), detail: nil))
+        }
+        return data
+    }
+    
+    // MARK: - Button Click Listeners
     
     @IBAction func onCancelButtonClick(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
@@ -48,6 +108,8 @@ class AddViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         // TODO
         self.save()
     }
+    
+    // MARK: - TableView functions
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return data.count
@@ -60,14 +122,22 @@ class AddViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         switch data[indexPath.section][indexPath.row].type {
-        case .EditText:
+        case .editText:
             let cell = tableView.dequeueReusableCell(withIdentifier: "EditTextCell") as! EditTextCell
             
             cell.editText.placeholder = data[indexPath.section][indexPath.row].title
             
+            if data[indexPath.section][indexPath.row].id == "price" {
+                cell.editText.keyboardType = .numberPad
+            }
+            
+            if let content = data[indexPath.section][indexPath.row].content {
+                cell.editText.text = content
+            }
+            
             return cell
             
-        case .Toggle:
+        case .toggle:
             let cell = tableView.dequeueReusableCell(withIdentifier: "ToggleCell") as! ToggleCell
             
             cell.textView.text = data[indexPath.section][indexPath.row].title
@@ -79,17 +149,12 @@ class AddViewController: UIViewController, UITableViewDelegate, UITableViewDataS
                 }
                 break
                 
-            case "reminder":
-                cell.onSwitchChangeListener = { value in
-                    self.toggleReminderSetting(show: value)
-                }
-                break
             default: break
             }
             
             return cell
             
-        case .Selection:
+        case .selection:
             let cell = tableView.dequeueReusableCell(withIdentifier: "SelectionCell") as! SelectionCell
             
             cell.textView.text = data[indexPath.section][indexPath.row].title
@@ -101,10 +166,16 @@ class AddViewController: UIViewController, UITableViewDelegate, UITableViewDataS
             
             return cell
             
-        case .Button:
+        case .button, .criticalButton:
             let cell = tableView.dequeueReusableCell(withIdentifier: "ButtonCell") as! ButtonCell
             
             cell.textView.text = data[indexPath.section][indexPath.row].title
+            
+            if data[indexPath.section][indexPath.row].type == .criticalButton {
+                cell.textView.textColor = UIColor.red
+            } else if data[indexPath.section][indexPath.row].type == .button {
+                cell.textView.textColor = UIColor.link
+            }
             
             return cell
         }
@@ -119,57 +190,106 @@ class AddViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        switch self.data[indexPath.section][indexPath.row].id {
+        case "icon":
+            performSegue(withIdentifier: self.SEG_ICON, sender: nil)
+            break
+            
+        case "category":
+            performSegue(withIdentifier: SEG_ADD_SELECTION, sender: nil)
+            break
+            
+        default:
+            break
+        }
+    }
+    
+    // MARK: - Initialize Data
+    
+    private func initSubscriptionData() {
+        if subscription == nil {
+            subscription = Subscription(id: Subscription.generateId(), name: "", price: 0, date: "")
+        } else {
+            editMode = true
+        }
     }
     
     private func initTableViewData() {
         // Main Section
         let main = [
-            AddTableViewData(id: "name", title: NSLocalizedString("add_name", comment: "")),
-            AddTableViewData(id: "advanced", title: NSLocalizedString("add_advanced", comment: ""), content: nil, type: .Toggle)
+            AddTableViewData(id: "name", title: NSLocalizedString("add_name", comment: ""), content: subscription.name, type: .editText),
+            AddTableViewData(id: "advanced", title: NSLocalizedString("add_advanced", comment: ""), content: nil, type: .toggle)
         ]
         
         data.append(main)
         header.append(nil)
         footer.append(nil)
         
-        // Date Section
-        let date = [
-            AddTableViewData(id: "date", title: NSLocalizedString("add_date", comment: ""), content: nil, type: .Selection)
+        // Subscription Info Section
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        let subInfo = [
+            AddTableViewData(id: "category", title: NSLocalizedString("add_category", comment: ""), content: nil, type: .selection),
+            AddTableViewData(id: "date", title: NSLocalizedString("add_date", comment: ""), content: formatter.string(from: Date()), type: .selection)
         ]
         
-        data.append(date)
-        header.append(nil)
+        data.append(subInfo)
+        header.append(NSLocalizedString("add_sub_info_header", comment: ""))
         footer.append(NSLocalizedString("add_footer_date", comment: ""))
         
         // Pay Section
         let pay = [
-            AddTableViewData(id: "payCycle", title: NSLocalizedString("add_pay_cycle", comment: ""), content: nil, type: .Selection),
-            AddTableViewData(id: "payMethod", title: NSLocalizedString("add_pay_method", comment: ""), content: nil, type: .Selection),
+            AddTableViewData(id: "payCycle", title: NSLocalizedString("add_pay_cycle", comment: ""), content: nil, type: .selection),
+            AddTableViewData(id: "payMethod", title: NSLocalizedString("add_pay_method", comment: ""), content: nil, type: .selection),
             AddTableViewData(id: "price", title: NSLocalizedString("add_pay_price", comment: ""))
         ]
         
+        let currencyUnit = UserDefaults(suiteName: AppValue.appGroupId)?.string(forKey: UserDefaultsKeys.ApplicationSetting.stringCurrencyUnit) ?? "$"
+        
         data.append(pay)
         header.append(NSLocalizedString("add_pay_header", comment: ""))
-        footer.append(nil)
-        
-        // Category Section
-        let category = [AddTableViewData(id: "category", title: NSLocalizedString("add_category", comment: ""), content: nil, type: .Selection)]
-        
-        data.append(category)
-        header.append(nil)
-        footer.append(nil)
+        footer.append(NSLocalizedString("\(NSLocalizedString("add_pay_footer", comment: ""))\(currencyUnit)", comment: ""))
         
         // Reminder Section
         let reminder = [
-            AddTableViewData(id: "reminder", title: NSLocalizedString("add_reminder", comment: ""), content: nil, type: .Toggle)
+            AddTableViewData(id: "reminder", title: NSLocalizedString("add_reminder", comment: ""), content: nil, type: .selection)
         ]
         
         data.append(reminder)
         header.append(NSLocalizedString("add_reminder_header", comment: ""))
         footer.append(nil)
         
+        // Icon Section
+        let icon = [
+            AddTableViewData(id: "icon", title: NSLocalizedString("add_icon", comment: ""), content: nil, type: .button)
+        ]
+        
+        data.append(icon)
+        header.append(NSLocalizedString("add_icon", comment: ""))
+        footer.append(nil)
+        
+        // Delete and Clear Data
+        if editMode {
+            let delete = [
+                AddTableViewData(id: "delete", title: NSLocalizedString("add_delete", comment: ""), content: nil, type: .criticalButton)
+            ]
+            
+            data.append(delete)
+            header.append(nil)
+            footer.append(NSLocalizedString("add_delete_footer", comment: ""))
+        } else {
+            let clear = [
+                AddTableViewData(id: "clear", title: NSLocalizedString("add_clear", comment: ""), content: nil, type: .button)
+            ]
+            
+            data.append(clear)
+            header.append(nil)
+            footer.append(nil)
+        }
+        
     }
+    
+    // MARK: - TableViewCell hide/show
     
     private func showSetting(data: [AddTableViewData], section: Int) {
         let originalNumber = self.data[section].count
@@ -203,32 +323,32 @@ class AddViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         tableView.endUpdates()
     }
     
-    private func toggleReminderSetting(show: Bool) {
-        if show {
-            let data = [
-                AddTableViewData(id: "reminder1", title: NSLocalizedString("add_reminder_1", comment: ""), content: nil, type: .Selection),
-                AddTableViewData(id: "reminder2", title: NSLocalizedString("add_reminder_2", comment: ""), content: nil, type: .Selection),
-                AddTableViewData(id: "reminder3", title: NSLocalizedString("add_reminder_3", comment: ""), content: nil, type: .Selection)
-            ]
-            
-            showSetting(data: data, section: 4)
-            
-        } else {
-            hideSetting(section: 4, count: 3)
-        }
-    }
-    
     private func toggleAdvancedSetting(show: Bool) {
         if show {
             let data = [
+                AddTableViewData(id: "payMethodDetail", title: NSLocalizedString("add_pay_method_detail", comment: "")),
                 AddTableViewData(id: "memo", title: NSLocalizedString("add_memo", comment: "")),
                 AddTableViewData(id: "url", title: NSLocalizedString("add_url", comment: ""))
             ]
             
             showSetting(data: data, section: 0)
         } else {
-            hideSetting(section: 0, count: 2)
+            hideSetting(section: 0, count: 3)
         }
+    }
+    
+    // MARK: - Regular Functions
+    
+    private func findDataById(id: String) -> IndexPath? {
+        for i in 0..<self.data.count {
+            for j in 0..<self.data[i].count {
+                if self.data[i][j].id == id {
+                    return IndexPath(row: j, section: i)
+                }
+            }
+        }
+        
+        return nil
     }
     
     private func save() {
@@ -244,15 +364,15 @@ class AddViewController: UIViewController, UITableViewDelegate, UITableViewDataS
                 let cell = tableView.cellForRow(at: indexPath)
                 
                 switch data.type {
-                case .EditText:
+                case .editText:
                     dic.updateValue((cell as! EditTextCell).editText?.text ?? "", forKey: data.id)
                     continue
                     
-                case .Toggle:
+                case .toggle:
                     dic.updateValue((cell as! ToggleCell).toggleView.isOn, forKey: data.id)
                     continue
                     
-                case .Selection:
+                case .selection:
                     let value = (cell as! SelectionCell).value
                     if value is Int {
                         dic.updateValue(value ?? -1, forKey: data.id)
@@ -276,11 +396,13 @@ class AddViewController: UIViewController, UITableViewDelegate, UITableViewDataS
 
 }
 
+// MARK: - Classes
+
 class AddTableViewData {
     var id: String
     var title: String
     var content: String?
-    var type: AddTableViewCellType = .EditText
+    var type: AddTableViewCellType = .editText
     
     init(id: String, title: String) {
         self.id = id
@@ -296,7 +418,7 @@ class AddTableViewData {
 }
 
 enum AddTableViewCellType {
-    case EditText, Toggle, Selection, Button
+    case editText, toggle, selection, button, criticalButton
 }
 
 class EditTextCell: UITableViewCell {

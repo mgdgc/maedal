@@ -8,12 +8,19 @@
 import UIKit
 
 class MoreViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    private let segMonetaryUnit = "segMonetaryUnit"
+    private let segAppInfo = "segAppInfo"
 
     @IBOutlet weak var tableView: UITableView!
     
     private var data: [[MoreVO]] = Array()
     private var header: [String?] = Array()
     private var footer: [String?] = Array()
+    
+    private var ud = AppValue.userDefaults
+    
+    var onViewControllerDisappear: (() -> ())?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +33,32 @@ class MoreViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.tableFooterView = UIView()
         
         initData()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        onViewControllerDisappear?()
+    }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        if segue.identifier == segMonetaryUnit {
+            let vc = segue.destination as? MonetaryUnitViewController
+            vc?.onValueChangeListener = { (unit, onRight) in
+                guard let section = self.tableView.indexPathForSelectedRow?.section else {
+                    return
+                }
+                guard let row = self.tableView.indexPathForSelectedRow?.row else {
+                    return
+                }
+                self.data[section][row].content = unit
+                self.tableView.reloadData()
+                
+                self.ud.set(unit, forKey: UserDefaultsKeys.ApplicationSetting.stringCurrencyUnit)
+                self.ud.set(onRight, forKey: UserDefaultsKeys.ApplicationSetting.boolCurrencyUnitOnRight)
+            }
+        }
     }
 
     // MARK: - Tableview Protocol Subs
@@ -88,6 +121,22 @@ class MoreViewController: UIViewController, UITableViewDelegate, UITableViewData
             cell.buttonTextView.text = data.title
             
             return cell
+            
+        // Cell with Switch
+        case .toggle:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "MoreSwitchCell") as! MoreSwitchCell
+            
+            cell.titleTextView.text = data.title
+            
+            if data.id == "decimal_point" {
+                cell.toggleView.setOn(ud.bool(forKey: UserDefaultsKeys.ApplicationSetting.boolHideDecimalPoint), animated: false)
+                
+                cell.onSwitchChangeListener = { isOn in
+                    self.ud.set(isOn, forKey: UserDefaultsKeys.ApplicationSetting.boolHideDecimalPoint)
+                }
+            }
+            
+            return cell
         }
     }
     
@@ -95,14 +144,31 @@ class MoreViewController: UIViewController, UITableViewDelegate, UITableViewData
         let data = self.data[indexPath.section][indexPath.row]
         
         switch data.id {
+        case "currency_unit":
+            self.performSegue(withIdentifier: segMonetaryUnit, sender: nil)
+            break
+            
         case "app_version":
-            self.performSegue(withIdentifier: "segAppInfo", sender: nil)
+            self.performSegue(withIdentifier: segAppInfo, sender: nil)
             break
             
         case "developer":
             break
             
         case "feedback":
+            let alert = ActionSheetAlertManager(title: NSLocalizedString("more_feedback_title", comment: ""), message: NSLocalizedString("more_feedback_message", comment: ""))
+            
+            let supportPage = UIAlertAction(title: NSLocalizedString("more_feedback_web", comment: ""), style: .default) { action in
+                if let url = URL(string: AppValue.AboutApplication.supportPageUrl) {
+                    UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                }
+            }
+            alert.addAction(supportPage)
+            
+            let cancel = UIAlertAction(title: NSLocalizedString("cancel", comment: ""), style: .cancel, handler: nil)
+            alert.addAction(cancel)
+            
+            self.present(alert.getActionSheetAlert(view: self.view), animated: true, completion: nil)
             break
             
         default:
@@ -119,14 +185,15 @@ class MoreViewController: UIViewController, UITableViewDelegate, UITableViewData
     // MARK: - Initialize Data
     
     func initData() {
-        // Local setting
-        let local = [
-            MoreVO(id: "monetary_unit", title: NSLocalizedString("more_monetary_unit", comment: ""), content: nil, icon: nil, type: .detail)
+        // User Preference setting
+        let preference = [
+            MoreVO(id: "currency_unit", title: NSLocalizedString("more_monetary_unit", comment: ""), content: ud.string(forKey: UserDefaultsKeys.ApplicationSetting.stringCurrencyUnit), icon: nil, type: .detail),
+            MoreVO(id: "decimal_point", title: NSLocalizedString("more_hide_decimal_point", comment: ""), content: nil, icon: nil, type: .toggle)
         ]
         
-        data.append(local)
-        header.append(NSLocalizedString("more_app_setting", comment: ""))
-        footer.append(nil)
+        data.append(preference)
+        header.append(NSLocalizedString("more_app_setting_header", comment: ""))
+        footer.append(NSLocalizedString("more_app_setting_footer", comment: ""))
         
         // Application information
         let appInfo = [
@@ -154,6 +221,34 @@ class MoreViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     // MARK: - Functions
     
+    private func setDefaultValue() {
+        // Currency Unit
+        let currencyUnit = ud.string(forKey: UserDefaultsKeys.ApplicationSetting.stringCurrencyUnit) ?? "$"
+        
+        // Hide Decimal point
+        let hideDecimalPoint = ud.bool(forKey: UserDefaultsKeys.ApplicationSetting.boolHideDecimalPoint)
+        
+        for i in 0..<data.count {
+            for j in 0..<data[i].count {
+                let cell = tableView.cellForRow(at: IndexPath(row: j, section: i))
+                
+                switch data[i][j].id {
+                case "currency_unit":
+                    (cell as! MoreCell).detailTextView.text = currencyUnit
+                    continue
+                    
+                case "decimal_point":
+                    (cell as! MoreSwitchCell).toggleView.isOn = hideDecimalPoint
+                    continue
+                    
+                default:
+                    continue
+                }
+            }
+        }
+        
+    }
+    
 }
 
 // MARK: - Classes
@@ -171,6 +266,17 @@ class MoreIconCell: UITableViewCell {
 
 class MoreButtonCell: UITableViewCell {
     @IBOutlet weak var buttonTextView: UILabel!
+}
+
+class MoreSwitchCell: UITableViewCell {
+    @IBOutlet weak var titleTextView: UILabel!
+    @IBOutlet weak var toggleView: UISwitch!
+    
+    var onSwitchChangeListener: ((_ isOn: Bool) -> ())?
+    
+    @IBAction func onSwitchChange(_ sender: UISwitch) {
+        onSwitchChangeListener?(sender.isOn)
+    }
 }
 
 class MoreVO {
@@ -192,5 +298,5 @@ class MoreVO {
 }
 
 enum MoreCellType {
-    case icon, normal, detail, button, critialButton
+    case icon, normal, detail, button, critialButton, toggle
 }

@@ -18,7 +18,7 @@ extension Subs {
 
     @NSManaged public var id: Int32
     @NSManaged public var name: String?
-    @NSManaged public var price: Int64
+    @NSManaged public var price: Double
     @NSManaged public var category: Int16
     @NSManaged public var payCycle: Int16
     @NSManaged public var payMethod: Int16
@@ -28,6 +28,7 @@ extension Subs {
     @NSManaged public var color: String?
     @NSManaged public var memo: String?
     @NSManaged public var url: String?
+    @NSManaged public var payMethodDetail: String?
 
 }
 

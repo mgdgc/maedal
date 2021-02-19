@@ -6,3 +6,101 @@
   
 */
 
+"app_name" = "매달";
+"more_deveoper_title" = "개발자";
+
+// Date
+"monday" = "월";
+"tuesday" = "화";
+"wednesday" = "수";
+"thursday" = "목";
+"friday" = "금";
+"saturday" = "토";
+"sunday" = "일";
+"year" = "년";
+"month" = "월";
+"day" = "일";
+
+// General Text
+"confirm" = "확인";
+"cancel" = "취소";
+"close" = "닫기";
+
+// ViewController
+"next_payment_description" = "No left payments";
+
+// MoreViewController
+"more_monetary_unit" = "화폐 단위";
+"more_hide_decimal_point" = "웬만하면 소수점 숨김";
+"more_app_setting_header" = "애플리케이션 설정";
+"more_app_setting_footer" = "\"웬만하면 소수점 숨김\"을 켜면 메인 화면에서 소수점 아래 숫자가 없는 경우에 숨겨드립니다.";
+"more_developer" = "개발자";
+"more_developer_name" = "RiDsoft";
+"more_feedback" = "문의";
+"more_app_header" = "애플리케이션 정보";
+"more_delete_subs" = "구독 데이터 초기화";
+"more_delete_all" = "전체 데이터 초기화";
+"more_delete_header" = "초기화";
+"more_delete_footer" = "초기화된 데이터는 복구할 수 없습니다. \n구독 데이터 초기화 시, 앱 데이터는 초기화되지 않습니다.";
+"more_feedback_title" = "문의";
+"more_feedback_message" = "이용중 발생한 문제나 새로운 기능을 건의할 수 있습니다.";
+"more_feedback_web" = "지원 페이지";
+
+// MonetaryUnitViewController
+"currency_unit_left_description" = "화폐 단위가 왼쪽에 위치합니다.";
+"currency_unit_right_description" = "화폐 단위가 오른쪽에 위치합니다.";
+"currency_custom_title" = "사용자 설정";
+"currency_custom_content" = "";
+"currency_custom_placeholder" = "화폐 단위";
+
+// LicensesViewController
+"licenses_title" = "라이선스";
+"licenses_visit_url" = "페이지 방문";
+
+// AddViewController & SubscriptionDetailViewController
+"add_name" = "구독 이름";
+"add_advanced" = "추가 설정";
+"add_pay_method_detail" = "결제 정보 (카드 이름, 카드 번호 등)";
+"add_memo" = "메모";
+"add_url" = "URL";
+"add_sub_info_header" = "구독 정보";
+"add_category" = "구독 종류";
+"add_date" = "가입 날짜";
+"add_footer_date" = "가입 날짜를 기준으로 결제일을 계산합니다. 결제 시스템에 따라 실제 결제일은 달라질 수 있습니다.";
+"add_pay_header" = "결제";
+"add_pay_cycle" = "결제 주기";
+"add_pay_method" = "결제 방법";
+"add_pay_price" = "가격";
+"add_pay_footer" = "화폐 단위는 메인화면 우측 상단 더보기에서 설정이 가능합니다. \n현재 설정된 단위: ";
+"add_reminder_header" = "미리 알림";
+"add_reminder" = "미리 알림";
+"add_icon" = "아이콘 설정";
+"add_delete" = "구독 삭제";
+"add_delete_footer" = "구독 데이터를 삭제하더라도 실제 구독이 삭제되지는 않습니다. 이용중인 서비스에서 직접 구독 취소하여주십시오.";
+"add_clear" = "입력 내용 초기화";
+
+// SubscriptionDetailViewController
+"detail_additional" = "추가 정보";
+
+// Subscription - Category
+"category_education" = "교육";
+"category_video" = "동영상";
+"category_utility" = "유틸리티";
+"category_food" = "음식 및 배달";
+"category_lifestyle" = "생활";
+"category_news" = "뉴스 및 미디어";
+"category_music" = "음악";
+"category_entertainment" = "엔터테인먼트";
+"category_etc" = "기타";
+
+// Subscription - PayMethod
+"method_appstore" = "App Store";
+"method_card" = "카드";
+"method_cash" = "현금";
+"method_bank" = "계좌";
+"method_transfer" = "이체";
+
+// Subscription - PayCycle
+"cycle_monthly" = "매달";
+"cycle_weekly" = "매주";
+"cycle_daily" = "매일";

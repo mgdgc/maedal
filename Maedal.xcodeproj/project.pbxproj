@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C0DFF1E25D2DD91006DAA41 /* LicensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0DFF1D25D2DD91006DAA41 /* LicensesViewController.swift */; };
+		1C0DFF2325D2DE04006DAA41 /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0DFF2225D2DE04006DAA41 /* License.swift */; };
 		1C3BFC6525ADB15D00704C89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3BFC6425ADB15D00704C89 /* AppDelegate.swift */; };
 		1C3BFC6725ADB15D00704C89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3BFC6625ADB15D00704C89 /* SceneDelegate.swift */; };
 		1C3BFC6925ADB15D00704C89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3BFC6825ADB15D00704C89 /* ViewController.swift */; };
@@ -15,6 +17,48 @@
 		1C3BFC7125ADB15E00704C89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C3BFC6F25ADB15E00704C89 /* LaunchScreen.storyboard */; };
 		1C3BFC7C25ADB15E00704C89 /* MaedalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3BFC7B25ADB15E00704C89 /* MaedalTests.swift */; };
 		1C3BFC8725ADB15E00704C89 /* MaedalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3BFC8625ADB15E00704C89 /* MaedalUITests.swift */; };
+		1C570EA225CC7CB700EE6C01 /* MonetaryUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C570EA125CC7CB700EE6C01 /* MonetaryUnitViewController.swift */; };
+		1C632EE325AF3D1E007E462E /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C632EE225AF3D1E007E462E /* MoreViewController.swift */; };
+		1C6F52ED25C6DEA30067FC8F /* IconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6F52EC25C6DEA30067FC8F /* IconViewController.swift */; };
+		1C6F52F525C6DEDD0067FC8F /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6F52F425C6DEDD0067FC8F /* SelectViewController.swift */; };
+		1C74BF9325D6C6E500E224AB /* SubscriptionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C74BF9225D6C6E500E224AB /* SubscriptionDetailViewController.swift */; };
+		1C851A9825C982F500580BED /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C851A9625C982F500580BED /* Model.xcdatamodeld */; };
+		1C851A9E25C985CC00580BED /* Subs+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C851A9C25C985CC00580BED /* Subs+CoreDataClass.swift */; };
+		1C851A9F25C985CC00580BED /* Subs+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C851A9D25C985CC00580BED /* Subs+CoreDataProperties.swift */; };
+		1C985D4025D2E95B00F23D31 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C985D4225D2E95B00F23D31 /* InfoPlist.strings */; };
+		1C985D4625D2EE5E00F23D31 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C985D4525D2EE5E00F23D31 /* Color.swift */; };
+		1CA768EB25B3360B004AD421 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1CA768ED25B3360B004AD421 /* Localizable.strings */; };
+		1CA768F625B33E15004AD421 /* AppVersionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA768F525B33E15004AD421 /* AppVersionViewController.swift */; };
+		1CA85AC625C340C900109D6B /* AppValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA85AC525C340C900109D6B /* AppValue.swift */; };
+		1CA85ACC25C3414000109D6B /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA85ACB25C3414000109D6B /* UserDefaults.swift */; };
+		1CA85AD425C3420E00109D6B /* DatabaseKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA85AD325C3420E00109D6B /* DatabaseKey.swift */; };
+		1CA85AFC25C518FB00109D6B /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA85AFB25C518FB00109D6B /* DatabaseManager.swift */; };
+		1CBD7DB225CD5B8600535F96 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBD7DB125CD5B8600535F96 /* UserDefaultsKeys.swift */; };
+		1CC5F54F25BB0AEF00C62CD4 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC5F54E25BB0AEF00C62CD4 /* AddViewController.swift */; };
+		1CED0E3B25DF01B100BBC128 /* ActionSheetAlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CED0E3A25DF01B100BBC128 /* ActionSheetAlertManager.swift */; };
+		1CED0E4325DF404400BBC128 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CED0E4225DF404400BBC128 /* WidgetKit.framework */; };
+		1CED0E4525DF404400BBC128 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CED0E4425DF404400BBC128 /* SwiftUI.framework */; };
+		1CED0E4825DF404400BBC128 /* Maedal_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CED0E4725DF404400BBC128 /* Maedal_Widget.swift */; };
+		1CED0E4B25DF404700BBC128 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CED0E4A25DF404700BBC128 /* Assets.xcassets */; };
+		1CED0E4D25DF404700BBC128 /* Maedal_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1CED0E4925DF404400BBC128 /* Maedal_Widget.intentdefinition */; };
+		1CED0E4E25DF404700BBC128 /* Maedal_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1CED0E4925DF404400BBC128 /* Maedal_Widget.intentdefinition */; };
+		1CED0E5125DF404700BBC128 /* Maedal WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1CED0E4025DF404400BBC128 /* Maedal WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1CED0E5C25DF407100BBC128 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CED0E5A25DF407100BBC128 /* Interface.storyboard */; };
+		1CED0E5E25DF407200BBC128 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CED0E5D25DF407200BBC128 /* Assets.xcassets */; };
+		1CED0E6525DF407200BBC128 /* Maedal Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1CED0E6425DF407200BBC128 /* Maedal Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1CED0E6A25DF407200BBC128 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CED0E6925DF407200BBC128 /* InterfaceController.swift */; };
+		1CED0E6C25DF407200BBC128 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CED0E6B25DF407200BBC128 /* ExtensionDelegate.swift */; };
+		1CED0E6E25DF407300BBC128 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CED0E6D25DF407300BBC128 /* NotificationController.swift */; };
+		1CED0E7025DF407300BBC128 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CED0E6F25DF407300BBC128 /* ComplicationController.swift */; };
+		1CED0E7225DF407400BBC128 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CED0E7125DF407400BBC128 /* Assets.xcassets */; };
+		1CED0E7E25DF407400BBC128 /* Maedal_WatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CED0E7D25DF407400BBC128 /* Maedal_WatchTests.swift */; };
+		1CED0E8925DF407400BBC128 /* Maedal_WatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CED0E8825DF407400BBC128 /* Maedal_WatchUITests.swift */; };
+		1CED0E8D25DF407400BBC128 /* Maedal Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1CED0E5825DF407100BBC128 /* Maedal Watch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1CED0E9D25DF439C00BBC128 /* SubscriptionDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CED0E9C25DF439C00BBC128 /* SubscriptionDataManager.swift */; };
+		1CED0E9F25E0712800BBC128 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 1CED0E9E25E0712800BBC128 /* .gitignore */; };
+		1CFEAAAA25B0374300DF0000 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFEAAA925B0374300DF0000 /* Subscription.swift */; };
+		1CFEAAB025B0401700DF0000 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFEAAAF25B0401700DF0000 /* Currency.swift */; };
+		1CFEAAB825B05A7C00DF0000 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFEAAB725B05A7C00DF0000 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,9 +76,82 @@
 			remoteGlobalIDString = 1C3BFC6025ADB15D00704C89;
 			remoteInfo = Maedal;
 		};
+		1CED0E4F25DF404700BBC128 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C3BFC5925ADB15D00704C89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CED0E3F25DF404400BBC128;
+			remoteInfo = "Maedal WidgetExtension";
+		};
+		1CED0E6625DF407200BBC128 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C3BFC5925ADB15D00704C89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CED0E6325DF407200BBC128;
+			remoteInfo = "Maedal Watch Extension";
+		};
+		1CED0E7A25DF407400BBC128 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C3BFC5925ADB15D00704C89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CED0E6325DF407200BBC128;
+			remoteInfo = "Maedal Watch Extension";
+		};
+		1CED0E8525DF407400BBC128 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C3BFC5925ADB15D00704C89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CED0E5725DF407100BBC128;
+			remoteInfo = "Maedal Watch";
+		};
+		1CED0E8B25DF407400BBC128 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C3BFC5925ADB15D00704C89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CED0E5725DF407100BBC128;
+			remoteInfo = "Maedal Watch";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1CED0E5525DF404700BBC128 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1CED0E5125DF404700BBC128 /* Maedal WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CED0E9125DF407400BBC128 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1CED0E6525DF407200BBC128 /* Maedal Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CED0E9525DF407400BBC128 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1CED0E8D25DF407400BBC128 /* Maedal Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1C0DFF1D25D2DD91006DAA41 /* LicensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensesViewController.swift; sourceTree = "<group>"; };
+		1C0DFF2225D2DE04006DAA41 /* License.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = License.swift; sourceTree = "<group>"; };
 		1C3BFC6125ADB15D00704C89 /* Maedal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maedal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C3BFC6425ADB15D00704C89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C3BFC6625ADB15D00704C89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +166,60 @@
 		1C3BFC8225ADB15E00704C89 /* MaedalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaedalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C3BFC8625ADB15E00704C89 /* MaedalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaedalUITests.swift; sourceTree = "<group>"; };
 		1C3BFC8825ADB15E00704C89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C570EA125CC7CB700EE6C01 /* MonetaryUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonetaryUnitViewController.swift; sourceTree = "<group>"; };
+		1C632EE225AF3D1E007E462E /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		1C6F52EC25C6DEA30067FC8F /* IconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconViewController.swift; sourceTree = "<group>"; };
+		1C6F52F425C6DEDD0067FC8F /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
+		1C74BF9225D6C6E500E224AB /* SubscriptionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionDetailViewController.swift; sourceTree = "<group>"; };
+		1C74BF9725D6FCB800E224AB /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		1C851A9725C982F500580BED /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		1C851A9C25C985CC00580BED /* Subs+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Subs+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1C851A9D25C985CC00580BED /* Subs+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Subs+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1C985D4125D2E95B00F23D31 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1C985D4325D2E95D00F23D31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1C985D4525D2EE5E00F23D31 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		1CA768E725B335EC004AD421 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		1CA768EC25B3360B004AD421 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1CA768F125B3361A004AD421 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1CA768F525B33E15004AD421 /* AppVersionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersionViewController.swift; sourceTree = "<group>"; };
+		1CA85AC125C3402D00109D6B /* Maedal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Maedal.entitlements; sourceTree = "<group>"; };
+		1CA85AC525C340C900109D6B /* AppValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppValue.swift; sourceTree = "<group>"; };
+		1CA85ACB25C3414000109D6B /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		1CA85AD325C3420E00109D6B /* DatabaseKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseKey.swift; sourceTree = "<group>"; };
+		1CA85AFB25C518FB00109D6B /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		1CBD7DB125CD5B8600535F96 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		1CC5F54E25BB0AEF00C62CD4 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		1CED0E3A25DF01B100BBC128 /* ActionSheetAlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetAlertManager.swift; sourceTree = "<group>"; };
+		1CED0E4025DF404400BBC128 /* Maedal WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Maedal WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CED0E4225DF404400BBC128 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		1CED0E4425DF404400BBC128 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		1CED0E4725DF404400BBC128 /* Maedal_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maedal_Widget.swift; sourceTree = "<group>"; };
+		1CED0E4925DF404400BBC128 /* Maedal_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Maedal_Widget.intentdefinition; sourceTree = "<group>"; };
+		1CED0E4A25DF404700BBC128 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CED0E4C25DF404700BBC128 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CED0E5825DF407100BBC128 /* Maedal Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Maedal Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CED0E5B25DF407100BBC128 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		1CED0E5D25DF407200BBC128 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CED0E5F25DF407200BBC128 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CED0E6425DF407200BBC128 /* Maedal Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Maedal Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CED0E6925DF407200BBC128 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		1CED0E6B25DF407200BBC128 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		1CED0E6D25DF407300BBC128 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		1CED0E6F25DF407300BBC128 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		1CED0E7125DF407400BBC128 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CED0E7325DF407400BBC128 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CED0E7425DF407400BBC128 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		1CED0E7925DF407400BBC128 /* Maedal WatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Maedal WatchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CED0E7D25DF407400BBC128 /* Maedal_WatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maedal_WatchTests.swift; sourceTree = "<group>"; };
+		1CED0E7F25DF407400BBC128 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CED0E8425DF407400BBC128 /* Maedal WatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Maedal WatchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CED0E8825DF407400BBC128 /* Maedal_WatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maedal_WatchUITests.swift; sourceTree = "<group>"; };
+		1CED0E8A25DF407400BBC128 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CED0E9C25DF439C00BBC128 /* SubscriptionDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionDataManager.swift; sourceTree = "<group>"; };
+		1CED0E9E25E0712800BBC128 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		1CFEAAA925B0374300DF0000 /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		1CFEAAAF25B0401700DF0000 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		1CFEAAB725B05A7C00DF0000 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,15 +244,54 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1CED0E3D25DF404400BBC128 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CED0E4525DF404400BBC128 /* SwiftUI.framework in Frameworks */,
+				1CED0E4325DF404400BBC128 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CED0E6125DF407200BBC128 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CED0E7625DF407400BBC128 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CED0E8125DF407400BBC128 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		1C3BFC5825ADB15D00704C89 = {
 			isa = PBXGroup;
 			children = (
+				1CED0E9E25E0712800BBC128 /* .gitignore */,
+				1C851A9C25C985CC00580BED /* Subs+CoreDataClass.swift */,
+				1C851A9D25C985CC00580BED /* Subs+CoreDataProperties.swift */,
 				1C3BFC6325ADB15D00704C89 /* Maedal */,
 				1C3BFC7A25ADB15E00704C89 /* MaedalTests */,
 				1C3BFC8525ADB15E00704C89 /* MaedalUITests */,
+				1CED0E4625DF404400BBC128 /* Maedal Widget */,
+				1CED0E5925DF407100BBC128 /* Maedal Watch */,
+				1CED0E6825DF407200BBC128 /* Maedal Watch Extension */,
+				1CED0E7C25DF407400BBC128 /* Maedal WatchTests */,
+				1CED0E8725DF407400BBC128 /* Maedal WatchUITests */,
+				1CED0E4125DF404400BBC128 /* Frameworks */,
 				1C3BFC6225ADB15D00704C89 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +302,11 @@
 				1C3BFC6125ADB15D00704C89 /* Maedal.app */,
 				1C3BFC7725ADB15E00704C89 /* MaedalTests.xctest */,
 				1C3BFC8225ADB15E00704C89 /* MaedalUITests.xctest */,
+				1CED0E4025DF404400BBC128 /* Maedal WidgetExtension.appex */,
+				1CED0E5825DF407100BBC128 /* Maedal Watch.app */,
+				1CED0E6425DF407200BBC128 /* Maedal Watch Extension.appex */,
+				1CED0E7925DF407400BBC128 /* Maedal WatchTests.xctest */,
+				1CED0E8425DF407400BBC128 /* Maedal WatchUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +314,14 @@
 		1C3BFC6325ADB15D00704C89 /* Maedal */ = {
 			isa = PBXGroup;
 			children = (
+				1CA85AC125C3402D00109D6B /* Maedal.entitlements */,
+				1CA85AF325C4977100109D6B /* coredata */,
+				1CA85ACA25C3412A00109D6B /* extensions */,
+				1CFEAAAE25B0400C00DF0000 /* value */,
+				1CA85AFA25C518D100109D6B /* worker */,
+				1C632EE125AF39AF007E462E /* model */,
+				1C570E9D25CC79E800EE6C01 /* more */,
+				1C6F52E825C6DE660067FC8F /* addDataView */,
 				1C3BFC6425ADB15D00704C89 /* AppDelegate.swift */,
 				1C3BFC6625ADB15D00704C89 /* SceneDelegate.swift */,
 				1C3BFC6825ADB15D00704C89 /* ViewController.swift */,
@@ -106,6 +329,9 @@
 				1C3BFC6D25ADB15E00704C89 /* Assets.xcassets */,
 				1C3BFC6F25ADB15E00704C89 /* LaunchScreen.storyboard */,
 				1C3BFC7225ADB15E00704C89 /* Info.plist */,
+				1CA768ED25B3360B004AD421 /* Localizable.strings */,
+				1C985D4225D2E95B00F23D31 /* InfoPlist.strings */,
+				1C74BF9225D6C6E500E224AB /* SubscriptionDetailViewController.swift */,
 			);
 			path = Maedal;
 			sourceTree = "<group>";
@@ -128,6 +354,137 @@
 			path = MaedalUITests;
 			sourceTree = "<group>";
 		};
+		1C570E9D25CC79E800EE6C01 /* more */ = {
+			isa = PBXGroup;
+			children = (
+				1C632EE225AF3D1E007E462E /* MoreViewController.swift */,
+				1CA768F525B33E15004AD421 /* AppVersionViewController.swift */,
+				1C570EA125CC7CB700EE6C01 /* MonetaryUnitViewController.swift */,
+				1C0DFF1D25D2DD91006DAA41 /* LicensesViewController.swift */,
+			);
+			path = more;
+			sourceTree = "<group>";
+		};
+		1C632EE125AF39AF007E462E /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1CFEAAA925B0374300DF0000 /* Subscription.swift */,
+				1CFEAAB725B05A7C00DF0000 /* User.swift */,
+				1C0DFF2225D2DE04006DAA41 /* License.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		1C6F52E825C6DE660067FC8F /* addDataView */ = {
+			isa = PBXGroup;
+			children = (
+				1CC5F54E25BB0AEF00C62CD4 /* AddViewController.swift */,
+				1C6F52EC25C6DEA30067FC8F /* IconViewController.swift */,
+				1C6F52F425C6DEDD0067FC8F /* SelectViewController.swift */,
+			);
+			path = addDataView;
+			sourceTree = "<group>";
+		};
+		1CA85ACA25C3412A00109D6B /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1CA85ACB25C3414000109D6B /* UserDefaults.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		1CA85AF325C4977100109D6B /* coredata */ = {
+			isa = PBXGroup;
+			children = (
+				1C851A9625C982F500580BED /* Model.xcdatamodeld */,
+			);
+			path = coredata;
+			sourceTree = "<group>";
+		};
+		1CA85AFA25C518D100109D6B /* worker */ = {
+			isa = PBXGroup;
+			children = (
+				1CA85AFB25C518FB00109D6B /* DatabaseManager.swift */,
+				1CED0E3A25DF01B100BBC128 /* ActionSheetAlertManager.swift */,
+				1CED0E9C25DF439C00BBC128 /* SubscriptionDataManager.swift */,
+			);
+			path = worker;
+			sourceTree = "<group>";
+		};
+		1CED0E4125DF404400BBC128 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CED0E4225DF404400BBC128 /* WidgetKit.framework */,
+				1CED0E4425DF404400BBC128 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1CED0E4625DF404400BBC128 /* Maedal Widget */ = {
+			isa = PBXGroup;
+			children = (
+				1CED0E4725DF404400BBC128 /* Maedal_Widget.swift */,
+				1CED0E4925DF404400BBC128 /* Maedal_Widget.intentdefinition */,
+				1CED0E4A25DF404700BBC128 /* Assets.xcassets */,
+				1CED0E4C25DF404700BBC128 /* Info.plist */,
+			);
+			path = "Maedal Widget";
+			sourceTree = "<group>";
+		};
+		1CED0E5925DF407100BBC128 /* Maedal Watch */ = {
+			isa = PBXGroup;
+			children = (
+				1CED0E5A25DF407100BBC128 /* Interface.storyboard */,
+				1CED0E5D25DF407200BBC128 /* Assets.xcassets */,
+				1CED0E5F25DF407200BBC128 /* Info.plist */,
+			);
+			path = "Maedal Watch";
+			sourceTree = "<group>";
+		};
+		1CED0E6825DF407200BBC128 /* Maedal Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1CED0E6925DF407200BBC128 /* InterfaceController.swift */,
+				1CED0E6B25DF407200BBC128 /* ExtensionDelegate.swift */,
+				1CED0E6D25DF407300BBC128 /* NotificationController.swift */,
+				1CED0E6F25DF407300BBC128 /* ComplicationController.swift */,
+				1CED0E7125DF407400BBC128 /* Assets.xcassets */,
+				1CED0E7325DF407400BBC128 /* Info.plist */,
+				1CED0E7425DF407400BBC128 /* PushNotificationPayload.apns */,
+			);
+			path = "Maedal Watch Extension";
+			sourceTree = "<group>";
+		};
+		1CED0E7C25DF407400BBC128 /* Maedal WatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				1CED0E7D25DF407400BBC128 /* Maedal_WatchTests.swift */,
+				1CED0E7F25DF407400BBC128 /* Info.plist */,
+			);
+			path = "Maedal WatchTests";
+			sourceTree = "<group>";
+		};
+		1CED0E8725DF407400BBC128 /* Maedal WatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1CED0E8825DF407400BBC128 /* Maedal_WatchUITests.swift */,
+				1CED0E8A25DF407400BBC128 /* Info.plist */,
+			);
+			path = "Maedal WatchUITests";
+			sourceTree = "<group>";
+		};
+		1CFEAAAE25B0400C00DF0000 /* value */ = {
+			isa = PBXGroup;
+			children = (
+				1CFEAAAF25B0401700DF0000 /* Currency.swift */,
+				1CA85AC525C340C900109D6B /* AppValue.swift */,
+				1CA85AD325C3420E00109D6B /* DatabaseKey.swift */,
+				1CBD7DB125CD5B8600535F96 /* UserDefaultsKeys.swift */,
+				1C985D4525D2EE5E00F23D31 /* Color.swift */,
+			);
+			path = value;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,10 +495,14 @@
 				1C3BFC5D25ADB15D00704C89 /* Sources */,
 				1C3BFC5E25ADB15D00704C89 /* Frameworks */,
 				1C3BFC5F25ADB15D00704C89 /* Resources */,
+				1CED0E5525DF404700BBC128 /* Embed App Extensions */,
+				1CED0E9525DF407400BBC128 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1CED0E5025DF404700BBC128 /* PBXTargetDependency */,
+				1CED0E8C25DF407400BBC128 /* PBXTargetDependency */,
 			);
 			name = Maedal;
 			productName = Maedal;
@@ -184,13 +545,100 @@
 			productReference = 1C3BFC8225ADB15E00704C89 /* MaedalUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		1CED0E3F25DF404400BBC128 /* Maedal WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CED0E5225DF404700BBC128 /* Build configuration list for PBXNativeTarget "Maedal WidgetExtension" */;
+			buildPhases = (
+				1CED0E3C25DF404400BBC128 /* Sources */,
+				1CED0E3D25DF404400BBC128 /* Frameworks */,
+				1CED0E3E25DF404400BBC128 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Maedal WidgetExtension";
+			productName = "Maedal WidgetExtension";
+			productReference = 1CED0E4025DF404400BBC128 /* Maedal WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		1CED0E5725DF407100BBC128 /* Maedal Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CED0E9225DF407400BBC128 /* Build configuration list for PBXNativeTarget "Maedal Watch" */;
+			buildPhases = (
+				1CED0E5625DF407100BBC128 /* Resources */,
+				1CED0E9125DF407400BBC128 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CED0E6725DF407200BBC128 /* PBXTargetDependency */,
+			);
+			name = "Maedal Watch";
+			productName = "Maedal Watch";
+			productReference = 1CED0E5825DF407100BBC128 /* Maedal Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		1CED0E6325DF407200BBC128 /* Maedal Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CED0E8E25DF407400BBC128 /* Build configuration list for PBXNativeTarget "Maedal Watch Extension" */;
+			buildPhases = (
+				1CED0E6025DF407200BBC128 /* Sources */,
+				1CED0E6125DF407200BBC128 /* Frameworks */,
+				1CED0E6225DF407200BBC128 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Maedal Watch Extension";
+			productName = "Maedal Watch Extension";
+			productReference = 1CED0E6425DF407200BBC128 /* Maedal Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		1CED0E7825DF407400BBC128 /* Maedal WatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CED0E9625DF407400BBC128 /* Build configuration list for PBXNativeTarget "Maedal WatchTests" */;
+			buildPhases = (
+				1CED0E7525DF407400BBC128 /* Sources */,
+				1CED0E7625DF407400BBC128 /* Frameworks */,
+				1CED0E7725DF407400BBC128 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CED0E7B25DF407400BBC128 /* PBXTargetDependency */,
+			);
+			name = "Maedal WatchTests";
+			productName = "Maedal WatchTests";
+			productReference = 1CED0E7925DF407400BBC128 /* Maedal WatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1CED0E8325DF407400BBC128 /* Maedal WatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CED0E9925DF407400BBC128 /* Build configuration list for PBXNativeTarget "Maedal WatchUITests" */;
+			buildPhases = (
+				1CED0E8025DF407400BBC128 /* Sources */,
+				1CED0E8125DF407400BBC128 /* Frameworks */,
+				1CED0E8225DF407400BBC128 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CED0E8625DF407400BBC128 /* PBXTargetDependency */,
+			);
+			name = "Maedal WatchUITests";
+			productName = "Maedal WatchUITests";
+			productReference = 1CED0E8425DF407400BBC128 /* Maedal WatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		1C3BFC5925ADB15D00704C89 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1230;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					1C3BFC6025ADB15D00704C89 = {
@@ -204,6 +652,23 @@
 						CreatedOnToolsVersion = 12.3;
 						TestTargetID = 1C3BFC6025ADB15D00704C89;
 					};
+					1CED0E3F25DF404400BBC128 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					1CED0E5725DF407100BBC128 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					1CED0E6325DF407200BBC128 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					1CED0E7825DF407400BBC128 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 1CED0E6325DF407200BBC128;
+					};
+					1CED0E8325DF407400BBC128 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 1CED0E5725DF407100BBC128;
+					};
 				};
 			};
 			buildConfigurationList = 1C3BFC5C25ADB15D00704C89 /* Build configuration list for PBXProject "Maedal" */;
@@ -213,6 +678,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 1C3BFC5825ADB15D00704C89;
 			productRefGroup = 1C3BFC6225ADB15D00704C89 /* Products */;
@@ -222,6 +688,11 @@
 				1C3BFC6025ADB15D00704C89 /* Maedal */,
 				1C3BFC7625ADB15E00704C89 /* MaedalTests */,
 				1C3BFC8125ADB15E00704C89 /* MaedalUITests */,
+				1CED0E3F25DF404400BBC128 /* Maedal WidgetExtension */,
+				1CED0E5725DF407100BBC128 /* Maedal Watch */,
+				1CED0E6325DF407200BBC128 /* Maedal Watch Extension */,
+				1CED0E7825DF407400BBC128 /* Maedal WatchTests */,
+				1CED0E8325DF407400BBC128 /* Maedal WatchUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -232,8 +703,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C3BFC7125ADB15E00704C89 /* LaunchScreen.storyboard in Resources */,
+				1CA768EB25B3360B004AD421 /* Localizable.strings in Resources */,
 				1C3BFC6E25ADB15E00704C89 /* Assets.xcassets in Resources */,
 				1C3BFC6C25ADB15D00704C89 /* Main.storyboard in Resources */,
+				1CED0E9F25E0712800BBC128 /* .gitignore in Resources */,
+				1C985D4025D2E95B00F23D31 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +725,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1CED0E3E25DF404400BBC128 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CED0E4B25DF404700BBC128 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CED0E5625DF407100BBC128 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CED0E5E25DF407200BBC128 /* Assets.xcassets in Resources */,
+				1CED0E5C25DF407100BBC128 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CED0E6225DF407200BBC128 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CED0E7225DF407400BBC128 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CED0E7725DF407400BBC128 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CED0E8225DF407400BBC128 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -258,9 +771,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C0DFF1E25D2DD91006DAA41 /* LicensesViewController.swift in Sources */,
+				1CA85AFC25C518FB00109D6B /* DatabaseManager.swift in Sources */,
+				1C985D4625D2EE5E00F23D31 /* Color.swift in Sources */,
+				1CC5F54F25BB0AEF00C62CD4 /* AddViewController.swift in Sources */,
+				1CFEAAB025B0401700DF0000 /* Currency.swift in Sources */,
+				1CED0E3B25DF01B100BBC128 /* ActionSheetAlertManager.swift in Sources */,
 				1C3BFC6925ADB15D00704C89 /* ViewController.swift in Sources */,
+				1CA85AC625C340C900109D6B /* AppValue.swift in Sources */,
+				1CA85ACC25C3414000109D6B /* UserDefaults.swift in Sources */,
+				1C632EE325AF3D1E007E462E /* MoreViewController.swift in Sources */,
+				1C6F52ED25C6DEA30067FC8F /* IconViewController.swift in Sources */,
+				1C0DFF2325D2DE04006DAA41 /* License.swift in Sources */,
+				1C851A9E25C985CC00580BED /* Subs+CoreDataClass.swift in Sources */,
+				1C851A9825C982F500580BED /* Model.xcdatamodeld in Sources */,
 				1C3BFC6525ADB15D00704C89 /* AppDelegate.swift in Sources */,
 				1C3BFC6725ADB15D00704C89 /* SceneDelegate.swift in Sources */,
+				1CBD7DB225CD5B8600535F96 /* UserDefaultsKeys.swift in Sources */,
+				1C74BF9325D6C6E500E224AB /* SubscriptionDetailViewController.swift in Sources */,
+				1CFEAAAA25B0374300DF0000 /* Subscription.swift in Sources */,
+				1CFEAAB825B05A7C00DF0000 /* User.swift in Sources */,
+				1CED0E4E25DF404700BBC128 /* Maedal_Widget.intentdefinition in Sources */,
+				1C570EA225CC7CB700EE6C01 /* MonetaryUnitViewController.swift in Sources */,
+				1CA85AD425C3420E00109D6B /* DatabaseKey.swift in Sources */,
+				1CA768F625B33E15004AD421 /* AppVersionViewController.swift in Sources */,
+				1C851A9F25C985CC00580BED /* Subs+CoreDataProperties.swift in Sources */,
+				1CED0E9D25DF439C00BBC128 /* SubscriptionDataManager.swift in Sources */,
+				1C6F52F525C6DEDD0067FC8F /* SelectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +817,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1CED0E3C25DF404400BBC128 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CED0E4D25DF404700BBC128 /* Maedal_Widget.intentdefinition in Sources */,
+				1CED0E4825DF404400BBC128 /* Maedal_Widget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CED0E6025DF407200BBC128 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CED0E6E25DF407300BBC128 /* NotificationController.swift in Sources */,
+				1CED0E7025DF407300BBC128 /* ComplicationController.swift in Sources */,
+				1CED0E6C25DF407200BBC128 /* ExtensionDelegate.swift in Sources */,
+				1CED0E6A25DF407200BBC128 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CED0E7525DF407400BBC128 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CED0E7E25DF407400BBC128 /* Maedal_WatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CED0E8025DF407400BBC128 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CED0E8925DF407400BBC128 /* Maedal_WatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +866,31 @@
 			target = 1C3BFC6025ADB15D00704C89 /* Maedal */;
 			targetProxy = 1C3BFC8325ADB15E00704C89 /* PBXContainerItemProxy */;
 		};
+		1CED0E5025DF404700BBC128 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CED0E3F25DF404400BBC128 /* Maedal WidgetExtension */;
+			targetProxy = 1CED0E4F25DF404700BBC128 /* PBXContainerItemProxy */;
+		};
+		1CED0E6725DF407200BBC128 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CED0E6325DF407200BBC128 /* Maedal Watch Extension */;
+			targetProxy = 1CED0E6625DF407200BBC128 /* PBXContainerItemProxy */;
+		};
+		1CED0E7B25DF407400BBC128 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CED0E6325DF407200BBC128 /* Maedal Watch Extension */;
+			targetProxy = 1CED0E7A25DF407400BBC128 /* PBXContainerItemProxy */;
+		};
+		1CED0E8625DF407400BBC128 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CED0E5725DF407100BBC128 /* Maedal Watch */;
+			targetProxy = 1CED0E8525DF407400BBC128 /* PBXContainerItemProxy */;
+		};
+		1CED0E8C25DF407400BBC128 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CED0E5725DF407100BBC128 /* Maedal Watch */;
+			targetProxy = 1CED0E8B25DF407400BBC128 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -300,6 +898,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				1C3BFC6B25ADB15D00704C89 /* Base */,
+				1C74BF9725D6FCB800E224AB /* ko */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -308,8 +907,35 @@
 			isa = PBXVariantGroup;
 			children = (
 				1C3BFC7025ADB15E00704C89 /* Base */,
+				1CA768E725B335EC004AD421 /* ko */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1C985D4225D2E95B00F23D31 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C985D4125D2E95B00F23D31 /* ko */,
+				1C985D4325D2E95D00F23D31 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1CA768ED25B3360B004AD421 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CA768EC25B3360B004AD421 /* ko */,
+				1CA768F125B3361A004AD421 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		1CED0E5A25DF407100BBC128 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CED0E5B25DF407100BBC128 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -319,6 +945,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -366,7 +993,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -380,6 +1006,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -421,7 +1048,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -434,16 +1060,20 @@
 		1C3BFC8C25ADB15E00704C89 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Maedal/Maedal.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2102A0;
 				DEVELOPMENT_TEAM = BDU85ET24K;
 				INFOPLIST_FILE = Maedal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.ridsoft.Maedal;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.ridsoft.maedal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -453,16 +1083,20 @@
 		1C3BFC8D25ADB15E00704C89 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Maedal/Maedal.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2102A0;
 				DEVELOPMENT_TEAM = BDU85ET24K;
 				INFOPLIST_FILE = Maedal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.ridsoft.Maedal;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.ridsoft.maedal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -553,6 +1187,228 @@
 			};
 			name = Release;
 		};
+		1CED0E5325DF404700BBC128 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2102A0;
+				DEVELOPMENT_TEAM = BDU85ET24K;
+				INFOPLIST_FILE = "Maedal Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.ridsoft.maedal.Maedal-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1CED0E5425DF404700BBC128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2102A0;
+				DEVELOPMENT_TEAM = BDU85ET24K;
+				INFOPLIST_FILE = "Maedal Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.ridsoft.maedal.Maedal-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1CED0E8F25DF407400BBC128 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2102A0;
+				DEVELOPMENT_TEAM = BDU85ET24K;
+				INFOPLIST_FILE = "Maedal Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.ridsoft.maedal.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		1CED0E9025DF407400BBC128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2102A0;
+				DEVELOPMENT_TEAM = BDU85ET24K;
+				INFOPLIST_FILE = "Maedal Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.ridsoft.maedal.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
+		1CED0E9325DF407400BBC128 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2102A0;
+				DEVELOPMENT_TEAM = BDU85ET24K;
+				IBSC_MODULE = Maedal_Watch_Extension;
+				INFOPLIST_FILE = "Maedal Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.ridsoft.maedal.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		1CED0E9425DF407400BBC128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2102A0;
+				DEVELOPMENT_TEAM = BDU85ET24K;
+				IBSC_MODULE = Maedal_Watch_Extension;
+				INFOPLIST_FILE = "Maedal Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.ridsoft.maedal.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
+		1CED0E9725DF407400BBC128 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BDU85ET24K;
+				INFOPLIST_FILE = "Maedal WatchTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.ridsoft.maedal.Maedal-WatchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Maedal Watch Extension.appex/Maedal Watch Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		1CED0E9825DF407400BBC128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BDU85ET24K;
+				INFOPLIST_FILE = "Maedal WatchTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.ridsoft.maedal.Maedal-WatchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Maedal Watch Extension.appex/Maedal Watch Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		1CED0E9A25DF407400BBC128 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BDU85ET24K;
+				INFOPLIST_FILE = "Maedal WatchUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.ridsoft.maedal.Maedal-WatchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Maedal Watch";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		1CED0E9B25DF407400BBC128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BDU85ET24K;
+				INFOPLIST_FILE = "Maedal WatchUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.ridsoft.maedal.Maedal-WatchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Maedal Watch";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -592,7 +1448,65 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		1CED0E5225DF404700BBC128 /* Build configuration list for PBXNativeTarget "Maedal WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CED0E5325DF404700BBC128 /* Debug */,
+				1CED0E5425DF404700BBC128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CED0E8E25DF407400BBC128 /* Build configuration list for PBXNativeTarget "Maedal Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CED0E8F25DF407400BBC128 /* Debug */,
+				1CED0E9025DF407400BBC128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CED0E9225DF407400BBC128 /* Build configuration list for PBXNativeTarget "Maedal Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CED0E9325DF407400BBC128 /* Debug */,
+				1CED0E9425DF407400BBC128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CED0E9625DF407400BBC128 /* Build configuration list for PBXNativeTarget "Maedal WatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CED0E9725DF407400BBC128 /* Debug */,
+				1CED0E9825DF407400BBC128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CED0E9925DF407400BBC128 /* Build configuration list for PBXNativeTarget "Maedal WatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CED0E9A25DF407400BBC128 /* Debug */,
+				1CED0E9B25DF407400BBC128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1C851A9625C982F500580BED /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1C851A9725C982F500580BED /* Model.xcdatamodel */,
+			);
+			currentVersion = 1C851A9725C982F500580BED /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1C3BFC5925ADB15D00704C89 /* Project object */;
 }

@@ -7,3 +7,12 @@
 */
 
 "app_name" = "Maedal";
+"more_deveoper_title" = "Developer";
+
+"monday" = "Mon";
+"tuesday" = "Tue";
+"wednesday" = "Wed";
+"thursday" = "Thu";
+"friday" = "Fri";
+"saturday" = "Sat";
+"sunday" = "Sun";

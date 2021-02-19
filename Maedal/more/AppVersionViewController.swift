@@ -8,7 +8,7 @@
 import UIKit
 
 class AppVersionViewController: UIViewController {
-
+    
     @IBOutlet weak var appNameView: UILabel!
     
     override func viewDidLoad() {
@@ -29,5 +29,11 @@ class AppVersionViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    @IBAction func onPrivacyButtonClick(_ sender: UIButton) {
+        if let url = URL(string: AppValue.AboutApplication.privacyPolicyUrl) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
+    
 }
